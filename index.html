@@ -4,25 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abbey's Homepage</title>
+    <title>Abbey's World</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body::before {
+            content: "少女";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            font-size: 12vw;
+            color: rgba(245, 245, 245, .2);
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .anilist-icon {
+            background-image: url('https://anilist.co/img/icons/icon.svg');
+            filter: grayscale(100%);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .anilist-icon:hover {
+            filter: grayscale(0%);
+        }
+    </style>
 </head>
 
-<body class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center">
-
-    <div class="w-1/2 h-1/2 flex items-center justify-center">
-        <h1 class="text-4xl font-bold mb-6 text-center text-transform: lowercase;">abbey</h1>
-    </div>
-
-    <div class="space-x-4">
-        <!-- Twitter Icon Link -->
-        <a href="https://twitter.com/your_username" target="_blank" class="text-blue-500 hover:text-blue-700">
-            <i class="fab fa-twitter fa-2x"></i>
+<body class="bg-black text-white h-screen flex flex-col justify-center items-center">
+    <h1 class="text-6xl font-bold mb-10 tracking-wider">Abbey</h1>
+    <p class="text-lg mb-8 italic break-words max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="space-x-8 flex items-center">
+        <!-- GitHub Icon Link -->
+        <a href="https://github.com/your_username" aria-label="Abbey's GitHub Profile" target="_blank" class="text-gray-300 hover:text-white">
+            <i class="fab fa-github fa-4x"></i>
         </a>
-        <!-- Add more icons similarly -->
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- Twitter Icon Link -->
+        <a href="https://twitter.com/your_username" aria-label="Abbey's Twitter Profile" target="_blank" class="text-gray-300 hover:text-white">
+            <i class="fab fa-twitter fa-4x"></i>
+        </a>
+
+        <!-- Steam Icon Link -->
+        <a href="https://steamcommunity.com/id/your_username" aria-label="Abbey's Steam Profile" target="_blank" class="text-gray-300 hover:text-white">
+            <i class="fab fa-steam fa-4x"></i>
+        </a>
+
+        <!-- AniList Icon Link -->
+        <a href="https://anilist.co/user/your_username" aria-label="Abbey's AniList Profile" target="_blank" class="text-gray-300 hover:text-white">
+            <span class="anilist-icon w-16 h-16 inline-block bg-cover bg-no-repeat"></span>
+        </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" defer crossorigin="anonymous"></script>
 </body>
 
 </html>
