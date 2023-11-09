@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaTwitter, FaGithub, FaSteam } from "react-icons/fa";
+import Image from "next/image";
 
 // Assign AniList icon URL to a variable
 const aniListIconUrl = "https://anilist.co/img/icons/icon.svg";
@@ -47,7 +48,7 @@ export default function SocialsPage() {
         className="text-gray-300 hover:text-white"
         rel="noopener noreferrer"
       >
-        <img
+        <Image
           src={aniListIconUrl}
           alt="AniList Icon"
           className="w-16 h-16 grayscale hover:grayscale-0"
