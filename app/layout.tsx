@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description: "abbey's personal website containing projects",
   icons: {
-    icon: "/images/profile.png",
+    icon: "./images/profile.png",
   },
 };
 
