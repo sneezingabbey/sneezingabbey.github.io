@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'makima': "url('../public/images/makima_black_white.png')",
+        'makima': "url('../public/images/makima_black_white.webp')",
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
