@@ -52,6 +52,8 @@ export default function SocialsPage() {
           src={aniListIconUrl}
           alt="AniList Icon"
           className="w-16 h-16 grayscale hover:grayscale-0"
+          width={100}
+          height={100}
         />
       </a>
     </div>
